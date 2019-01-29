@@ -1,0 +1,151 @@
+body{
+	margin:0;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+*{
+	box-sizing:border-box;
+}
+header{
+	padding:6px 30px;
+	background-color:black;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	z-index:999;
+}
+.container{
+	max-width:100%;
+}
+
+
+.navbar-inverse{
+	background-color:black !important;
+	border-color:black !important;
+	margin:0 !important;
+}
+.sec1{
+	background-image:url("../images/cover1.jpg");
+	padding:150px 80px 100px;
+}
+.sec2{
+	background-image:url("../images/cover2.jpg");
+	padding:100px 80px;
+}
+.sec1, .sec2{
+	background-size:cover;
+	min-height:700px;
+	background-attachment:fixed;
+}
+
+.sec1-h{
+	text-shadow: 1px 1px 1px rgba(51,47,43,.8);
+	color:white;
+	font-size:40px;
+}
+ul.list3{
+	margin:0;
+	padding:0;
+}
+ul.list3 li{
+	border-bottom:1px solid black;
+	list-style-type:none;
+	line-height: 1.8;
+	padding:10px 0px;
+}
+ul.list3 li a{
+	color:white;
+	display:inline-block;
+	text-decoration:none;
+}
+ul.list3 li .big-link{
+	font-size:30px;
+	font-weight:bold;
+	text-shadow: 1px 1px 1px rgba(51,47,43,.8);
+	/*max-width:700px;*/
+}
+.w-100{
+	width:100%;
+}
+footer{
+	position:fixed;
+	left:0;
+	bottom:0;
+	width:100%;
+	background-color:black;
+}
+.f-block{
+	display:flex;
+	padding:20px 40px;
+}
+.f-block-inner2{
+	margin-left:auto;
+}
+.f-block a{
+	color:white;
+	text-decoration:none;
+}
+.big-title{
+	font-size:50px;
+	color:black;
+	font-weight:bold;
+	margin:0 0 30px;
+}
+.page2-main{
+	padding:100px 0px;
+}
+.right{
+	text-align:right;
+}
+.page2-main .container{
+	max-width:1000px;
+}
+.mb-20{
+	margin-bottom:20px;
+}
+.common-img{
+	max-width:100%;
+}
+
+/*responsive*/
+@media only screen and (max-width:900px) and (min-width:767px){
+	div#myNavbar a {
+    padding: 15px 10px;
+}
+header{
+	padding:6px 0;
+}
+}
+
+@media only screen and (max-width:767px){
+
+.sec1{
+	min-height:400px;
+	padding:200px 30px 150px;
+}	
+.sec2{
+	padding-left:30px;
+	padding-right:30px;
+}
+ul.list3 li .big-link{
+	font-size:26px;
+}
+
+}
+
+@media only screen and (max-width:576px){
+
+	
+.sec2, .sec1{
+	padding-left:20px;
+	padding-right:20px;
+}
+header{
+	padding:6px 10px;
+}
+.big-title{
+	font-size:35px;
+}
+
+
+}
